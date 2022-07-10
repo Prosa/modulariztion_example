@@ -13,6 +13,6 @@ This is a Flutter project that can explain how can you modularize your applicati
     
     1. How can you use modules within your app, the proper way
     2. How can you design widgets that will change its theme dynamically depending on the apps theme.
-    3. Few fundamental example about [Get package](https://pub.dev/packages/get) and its use.
+    3. Few fundamental examples about [Get package](https://pub.dev/packages/get) and its use.
 
 
