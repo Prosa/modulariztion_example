@@ -1,16 +1,18 @@
-# modularization_example
+# Modularization Example
 
-A new Flutter project.
+This is a Flutter project that can explain how can you modularize your application 
 
-## Getting Started
+- This example uses [Get package](https://pub.dev/packages/get) for:
 
-This project is a starting point for a Flutter application.
+    1. State management
+    2. Route management
+    3. instance management (dependency injection)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- This example covers:
+    
+    1. How can you use modules within your app, the proper way
+    2. How can you design widgets that will change its theme dynamically depending on the apps theme.
+    3. Few fundamental example about [Get package](https://pub.dev/packages/get) and its use.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
