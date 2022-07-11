@@ -1,8 +1,10 @@
 
 
+import 'package:example_app_one/common/get/routes/route_constants.dart';
 import 'package:example_app_one/getx/controller/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
+import 'package:get/route_manager.dart';
 
 class HomeView extends GetView<HomeController>{
 
@@ -10,9 +12,17 @@ class HomeView extends GetView<HomeController>{
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('My Example App 1'),
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Center(
+            child: Text('My Example App 1'),
+          ),
+          ElevatedButton(onPressed: () {
+            Get.toNamed(kAppointmentsRoute);
+          }, child: const Text('Appointments'))
+        ],
       ),
 
     );

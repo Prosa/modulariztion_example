@@ -7,18 +7,20 @@ class MainContainer extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
   final Decoration? decoration;
+  final Widget? child;
 
-  const MainContainer({Key? key, this.width, this.height, this.padding, this.margin, this.decoration}) : super(key: key);
+  const MainContainer({Key? key, this.width, this.height, this.padding, this.margin, this.decoration, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width,
       height: height,
-      margin: margin,
-      decoration: Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.decoration,
+      margin: margin ?? Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.margin,
+      decoration: decoration ?? Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.decoration,
       alignment: Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.alignment,
-      padding: padding ?? Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.padding,
+      padding: padding ?? padding ?? Theme.of(context).extension<AppTheme>()?.mainContainerTheme?.padding,
+      child: child ?? const SizedBox(),
     );
   }
 }

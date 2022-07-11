@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:mysample/theme/get_theme.dart';
 import 'package:mysample/theme/main_container_theme.dart';
 import 'package:mysample/widget/main_container.dart';

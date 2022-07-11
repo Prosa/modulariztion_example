@@ -16,6 +16,8 @@ dependencies:
   get: ^4.6.5
   mysample:
     path: ../mysample
+  appointments:
+    path: ../appointments
 
 dev_dependencies:
   flutter_test:

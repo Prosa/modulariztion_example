@@ -1,10 +1,12 @@
 import 'package:example_app_one/common/get/routes/app_views.dart';
 import 'package:example_app_one/common/get/routes/route_constants.dart';
+import 'package:example_app_one/getx/binding/initial_binding.dart';
 import 'package:example_app_one/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
 void main() {
+
   runApp(const MyApp());
 }
 
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Example 1',
+
       //You can simply add a new view by:
       // Step 1: Adding a new route into ../common/get/routes/route_constants.dart
       // Step 2: Creating a controller file into ../get/controller folder
@@ -37,6 +40,8 @@ class MyApp extends StatelessWidget {
       //Whichever styling, we want to apply, we should only apply it here
       //This will make our theme dynamic
       theme: GetTheme.lightTheme,
+      //Initial binding are the instances that are used all through the application
+      initialBinding: InitialBinding(),
     );
   }
 }
