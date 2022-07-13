@@ -18,6 +18,7 @@ dependencies:
     path: ../mysample
   appointments:
     path: ../appointments
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:

@@ -1,12 +1,17 @@
+import 'package:appointments/common/model/appointment_model.dart';
 import 'package:example_app_two/common/get/routes/app_views.dart';
 import 'package:example_app_two/common/get/routes/route_constants.dart';
 import 'package:example_app_two/getx/binding/initial_binding.dart';
 import 'package:example_app_two/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
-
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
@@ -18,7 +23,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Example 2',
-
       //You can simply add a new view by:
       // Step 1: Adding a new route into ../common/get/routes/route_constants.dart
       // Step 2: Creating a controller file into ../get/controller folder

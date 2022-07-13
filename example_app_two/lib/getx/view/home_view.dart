@@ -16,8 +16,11 @@ class HomeView extends GetView<HomeController>{
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Center(
-            child: Text('My Example App 1'),
+          Center(
+            child: Text('My Example App 1',
+            style: TextStyle(
+            fontSize: MediaQueryData.fromWindow(WidgetsBinding.instance.window).size .width* 0.015,
+      ),),
           ),
           ElevatedButton(onPressed: () {
             Get.toNamed(kAppointmentsRoute);

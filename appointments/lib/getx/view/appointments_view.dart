@@ -22,8 +22,8 @@ class AppointmentsView extends GetView<AppointmentsController> {
           children: AppointmentModel.appointments
               .map(
                 (e) => MainContainer(
-                  width: 400,
-                  height: 200,
+                  width: double.infinity,
+                  height: 500,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -38,8 +38,8 @@ class AppointmentsView extends GetView<AppointmentsController> {
                       ),
                       Text(
                         e.subTitle,
-                        style: TextStyle(
-                          fontSize: Get.context!.devicePixelRatio * 5,
+                        style: const TextStyle(
+                          fontSize: 18,
                           color: Colors.black45,
                         ),
                       ),

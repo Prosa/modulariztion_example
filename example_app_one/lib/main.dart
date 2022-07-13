@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Example 1',
-
       //You can simply add a new view by:
       // Step 1: Adding a new route into ../common/get/routes/route_constants.dart
       // Step 2: Creating a controller file into ../get/controller folder
