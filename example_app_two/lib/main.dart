@@ -1,11 +1,10 @@
-import 'package:appointments/common/model/appointment_model.dart';
 import 'package:example_app_two/common/get/routes/app_views.dart';
 import 'package:example_app_two/common/get/routes/route_constants.dart';
 import 'package:example_app_two/getx/binding/initial_binding.dart';
-import 'package:example_app_two/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:template/template.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() {
@@ -43,7 +42,7 @@ class MyApp extends StatelessWidget {
       //IMPORTANT:
       //Whichever styling, we want to apply, we should only apply it here
       //This will make our theme dynamic
-      theme: GetTheme.lightTheme,
+      theme: Template.templateTestTwo.theme,
       //Initial binding are the instances that are used all through the application
       initialBinding: InitialBinding(),
     );

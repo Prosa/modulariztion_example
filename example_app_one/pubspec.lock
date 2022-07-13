@@ -116,13 +116,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
-  mysample:
-    dependency: "direct main"
-    description:
-      path: "../mysample"
-      relative: true
-    source: path
-    version: "1.0.0+1"
   path:
     dependency: transitive
     description:
@@ -163,6 +156,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  template:
+    dependency: "direct main"
+    description:
+      path: "../template"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   term_glyph:
     dependency: transitive
     description:

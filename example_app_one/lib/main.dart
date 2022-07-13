@@ -1,9 +1,9 @@
 import 'package:example_app_one/common/get/routes/app_views.dart';
 import 'package:example_app_one/common/get/routes/route_constants.dart';
 import 'package:example_app_one/getx/binding/initial_binding.dart';
-import 'package:example_app_one/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:template/template.dart';
 
 void main() {
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
       //IMPORTANT:
       //Whichever styling, we want to apply, we should only apply it here
       //This will make our theme dynamic
-      theme: GetTheme.lightTheme,
+      theme: Template.templateTestOne.theme,
       //Initial binding are the instances that are used all through the application
       initialBinding: InitialBinding(),
     );

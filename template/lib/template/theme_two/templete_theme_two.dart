@@ -5,7 +5,7 @@ import 'package:template/template/theme_two/text_style.dart';
 import 'package:template/theme/extension/app_theme_extension.dart';
 import 'package:template/theme/theme_data/main_container_theme.dart';
 
-ThemeData templateThemeOne = ThemeData(
+ThemeData templateThemeTwo = ThemeData(
   //We'll use scaffolds all through the app, so the background color is the scaffoldBackgroundColor
   scaffoldBackgroundColor: backgroundColor,
   primaryColorLight: primaryColorLight,
@@ -15,7 +15,7 @@ ThemeData templateThemeOne = ThemeData(
     backgroundColor: primaryColor,
     toolbarHeight: kDefaultToolbarHeight,
     iconTheme: IconThemeData(
-      color: secondaryColor,
+      color: onPrimaryColor,
     ),
     centerTitle: true,
   ),

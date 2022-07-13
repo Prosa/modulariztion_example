@@ -1,4 +1,5 @@
 
+import 'package:appointments/common/get/routes/route_constants.dart';
 import 'package:appointments/getx/binding/apppointments_binding.dart';
 import 'package:appointments/getx/view/appointments_view.dart';
 import 'package:example_app_one/common/get/routes/route_constants.dart';
